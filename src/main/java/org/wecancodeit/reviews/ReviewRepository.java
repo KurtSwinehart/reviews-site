@@ -12,11 +12,13 @@ public class ReviewRepository {
 	private Map<Long, Review> reviewList = new HashMap<>();
 
 	public ReviewRepository() {
-		Review cancun = new Review(1L, "Cancun", "Cancun Description");
-		Review jamaica = new Review(2L, "Jamaica", "Jamaica Description");
-		Review cuba = new Review(3L, "Cuba", "Cuba Description");
-		Review guatemala = new Review(4L, "Guatemala", "Guatemala Description");
-		Review puertoRico = new Review(5L, "Puerto Rico", "Puerto Rico Description");
+		Review cancun = new Review(1L, "Cancun", "Cancun Resort Options", "Cancun Content", "/images/cancun1.jpg");
+		Review jamaica = new Review(2L, "Jamaica", "Jamaica Resort Options", "Jamaica Content", "/images/jamaica1.jpg");
+		Review cuba = new Review(3L, "Cuba", "Cuba Resort Options", "Cuba Content", "/images/cuba1.jpg");
+		Review guatemala = new Review(4L, "Guatemala", "Guatemala Resort Options", "Guatemala Content",
+				"/images/guate1.jpg");
+		Review puertoRico = new Review(5L, "Puerto Rico", "Puerto Rico Resort Options", "PR Content",
+				"/images/puertorico1.jpg");
 
 		reviewList.put(cancun.getId(), cancun);
 		reviewList.put(jamaica.getId(), jamaica);
